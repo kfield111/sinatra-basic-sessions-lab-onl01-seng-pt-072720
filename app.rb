@@ -7,4 +7,8 @@ class App < Sinatra::Base
     set :session_secret, "Harpoon"
   end
 
+  get '/' do
+    erb :index
+  end
+
 end
